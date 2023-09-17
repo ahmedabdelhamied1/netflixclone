@@ -5,9 +5,6 @@ export const Container = styled.section`
   color: rgb(255, 255, 255);
   text-align: center;
   height: 100%;
-  box-sizing: border-box;
-  min-height: auto;
-  padding: 3.5rem 0;
   background: rgb(0, 0, 0);
   @media(min-width:1000px)
   {
