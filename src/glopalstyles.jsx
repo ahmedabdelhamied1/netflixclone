@@ -6,6 +6,7 @@ export const GlobalStyle = createGlobalStyle`
     margin:0;
     box-sizing:border-box;
     overflow-x:hidden;
+    user-select:none;
 }
 html,body 
 {

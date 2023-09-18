@@ -38,6 +38,7 @@ padding:2em 8em;
     flex-direction:column;
     padding:2em;
 }
+
 `;
 
 export const Title = styled.h1`

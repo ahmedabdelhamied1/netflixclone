@@ -1,7 +1,6 @@
 import styled from "styled-components";
 export const Container=styled.div`
 background:#000;
-border-bottom:10px solid #232323;
 padding: 3.5rem 0;
 
 `
@@ -13,7 +12,7 @@ padding:0 8em;
 }
 `
 export const Item=styled.section`
-margin-bottom:10px;
+margin-bottom:.8em;
 `
 export const Title=styled.h2`
 text-align:center;
