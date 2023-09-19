@@ -2,6 +2,7 @@ import styled from "styled-components";
 export const Container=styled.div`
 background:#000;
 padding: 3.5rem 0;
+border-bottom:10px solid #232323;
 
 `
 export const Inner=styled.div`
@@ -69,6 +70,7 @@ font-weight: 400;
 {
     font-size: 1.125rem;
     font-weight: 400;
+    
 }
 `
 

@@ -38,7 +38,11 @@ padding:2em 8em;
     flex-direction:column;
     padding:2em;
 }
+&:first-child
+{
+  border-top:10px solid #232323;
 
+}
 `;
 
 export const Title = styled.h1`

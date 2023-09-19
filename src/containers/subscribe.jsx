@@ -4,9 +4,9 @@ export default function Subscribe ({children,...restProps})
 {
  return <Container>{children}</Container>
 }
-Subscribe.Container=function Subscribecontainer({children,...restprops})
+Subscribe.Container=function Subscribecontainer({bg,children,...restprops})
 {
-    return <Container>{children}</Container>
+    return <Container bg={bg}>{children}</Container>
 }
 Subscribe.Title=function Subscribetitle({children,...restprops})
 {

@@ -40,17 +40,17 @@ Faqcontainer.Header=function FaqHeader({children,...restProps}){
     return (
     <Header onClick={()=>{
         setToggleshow(!toggleshow)
-        console.log('clicked');}
+       }
         } {...restProps}>
         {children}
-        {toggleshow?<img src="../../images/icons/close-slim.png" alt="open accordion icon"/>:<img src="../../images/icons/add.png" alt="close accordion icon"/>}
+        {toggleshow?(<img src="../../images/icons/close-slim.png" alt="open accordion icon"/>):(<img src="../../images/icons/add.png" alt="close accordion icon"/>)}
     </Header>
     )
 }
 Faqcontainer.Content=function Faqcontent({children,...restProps}){
     const {toggleshow}=useContext(togglecontext)
     
-    return toggleshow? <Content {...restProps}>{children}</Content>:null
+    return toggleshow? (<Content {...restProps}>{children}</Content>):(null)
       
     
 }

@@ -1,19 +1,30 @@
 import React from 'react'
-
-import Jumbotron from './components/jumbotron'
-import Faq from './components/faq'
-import Footer from './components/footer'
-import Subscribehere from './components/subscribe'
-
+import {Switch,Route,Link} from "react-router-dom"
+import Home from './pages/home'
+import { routes } from './constants/routes'
+import Signin from './pages/signin'
+import Signup from './pages/signup'
+import Browse from './pages/browse'
 
 function App() {
 
   return (
     <>
-     <Jumbotron/>
-     <Faq/>
-     <Subscribehere/>
-     <Footer/>
+    <Switch>
+       <Route exact path={routes.signin}>
+        <Signin/>
+       </Route>
+       <Route exact path={routes.signup}>
+        <Signup/>
+       </Route>
+       <Route exact path={routes.browse}>
+        <Browse/>
+       </Route>
+        <Route exact path={routes.home}>
+         <Home/>
+        </Route>
+    </Switch>
+     
     </>
   )
 }

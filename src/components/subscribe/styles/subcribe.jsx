@@ -1,20 +1,25 @@
 import styled from "styled-components"
 export const Container=styled.div`
-background:#000;
-padding:0 8em 3.5rem 8em;
+padding:2em 8em 0 8em;
 border-bottom:10px solid #232323;
 @media(max-width:600px)
 {
- padding:0 2em 2em 2em ;
+ padding:2em 0 0 0;
 }
+border:0;
 
 `
-export const Title=styled.h3`
+
+export const Title=styled.p`
 font-size: 1.25rem;
 font-weight: 400;
 line-height: 1.5;
 color:#fff;
 text-align:center;
+margin-bottom:0;
+margin-top:0;
+
+
 `
 export const Form=styled.div`
 display:flex;
@@ -22,12 +27,13 @@ justify-content:center;
 max-width:580px;
 margin:1em auto;
 @media(max-width:600px)
-{
+{  
+    padding:0 1em;
     flex-direction:column;
     align-items:center;
     input
     {
-        width:100%;
+        
         margin:1.2em 0;
     }
     

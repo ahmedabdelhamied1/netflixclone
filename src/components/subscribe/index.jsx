@@ -1,9 +1,9 @@
 import React from 'react'
 import Subscribe from '../../containers/subscribe'
-export default function Subscribehere()
+export default function Subscribehere({...restProps})
 {
     return (
-        <Subscribe.Container>
+        <Subscribe.Container {...restProps}>
             <Subscribe.Title>
             Ready to watch? Enter your email to create or restart your membership.
             </Subscribe.Title>

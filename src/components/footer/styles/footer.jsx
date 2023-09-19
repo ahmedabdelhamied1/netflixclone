@@ -4,7 +4,7 @@ padding:3.5em 8em;
 background:#000;
 @media(max-width:600px)
 {
-    padding:0 2em 2em 2em;
+    padding:2em;
 }
 `
 export const Inner=styled.div``

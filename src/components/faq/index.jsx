@@ -1,6 +1,7 @@
 import React from "react";
 import faqData from "../../fixtures/faqs.json"
 import Faqcontainer from "../../containers/faqcontainer";
+import Subscribehere from "../../components/subscribe/index"
 export default function Faq() {
     return(
         <Faqcontainer.Container>
@@ -19,6 +20,7 @@ export default function Faq() {
                 </Faqcontainer.Item>
              ))}
             </Faqcontainer.Inner>
+            <Subscribehere  />
         </Faqcontainer.Container>
     )
 }
