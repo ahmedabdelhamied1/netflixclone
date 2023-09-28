@@ -63,6 +63,7 @@ padding: 1.5rem;
 background:#2d2d2d;
 color:#fff;
 font-size:1.6rem;
+max-height:600px;
 transition: max-height .25s cubic-bezier(.5,0,.1,1);
 font-size: 1.5rem;
 font-weight: 400;

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 export const Container=styled.section`
-padding:8em;
+padding:2em 0;
 text-align:center;
 @media(max-width:600px)
 {
@@ -10,7 +10,6 @@ text-align:center;
 export const Title=styled.h1`
 font-size: 3rem;
 font-weight: 900;
-width: max-content;
 color:#fff;
 @media(max-width:600px)
 {

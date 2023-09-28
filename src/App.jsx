@@ -5,24 +5,28 @@ import { routes } from './constants/routes'
 import Signin from './pages/signin'
 import Signup from './pages/signup'
 import Browse from './pages/browse'
+import { IsUserRedirect, ProtectedRoute } from './helpers/routes'
 
 function App() {
-
+ const user={}
   return (
     <>
     <Switch>
-       <Route exact path={routes.signin}>
-        <Signin/>
-       </Route>
-       <Route exact path={routes.signup}>
-        <Signup/>
-       </Route>
-       <Route exact path={routes.browse}>
+      
+       <IsUserRedirect user={user} loggedInPath={routes.browse} path={routes.signin}>
+       <Signin/>
+       </IsUserRedirect>
+       <IsUserRedirect user={user} loggedInPath={routes.browse} path={routes.signup}>
+       <Signup/>
+       </IsUserRedirect>
+    
+      <IsUserRedirect user={user} loggedINPath={routes.browse} path={routes.home} exact >
+       <Home/>
+      </IsUserRedirect>
+      <ProtectedRoute user={user} path={routes.browse}>
         <Browse/>
-       </Route>
-        <Route exact path={routes.home}>
-         <Home/>
-        </Route>
+      </ProtectedRoute>
+            
     </Switch>
      
     </>

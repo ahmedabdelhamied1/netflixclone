@@ -2,16 +2,15 @@ import styled from "styled-components"
 import {Link as ReactLink} from "react-router-dom"
 export const Container=styled.div`
 position:relative;
-padding:1.5em 8em;
+padding:0;
 background:linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),url("${({src})=>src?src:'../../../../images/misc/home-bg.jpg'}");
 bacground-size:cover;
 background-color: #000;
 background-repeat: no-repeat;
 background-position:center;
-@media(max-width:600px)
-{
-    padding:2em;
+padding:2em 2em 7em 2em;
 }
+   
 `
 
 export const Base=styled.div`
