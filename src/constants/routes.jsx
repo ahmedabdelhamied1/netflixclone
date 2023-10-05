@@ -3,5 +3,5 @@ export const routes={
     "signin":"/signin",
     "signup":"/signup",
     "browse":"/browse"
-    
+    // this are the routes of the project
 }
