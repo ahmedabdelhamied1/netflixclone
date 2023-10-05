@@ -3,6 +3,4 @@ export const routes={
     "signin":"/signin",
     "signup":"/signup",
     "browse":"/browse"
-
-
 }
